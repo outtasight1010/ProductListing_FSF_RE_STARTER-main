@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./App.css";
 import data from './data/data.json';
 import NavBar from './Components/NavBar/NavBar';
+import ProductCard from './Components/ProductCard/ProductCard';
 //import ProductCard from './Components/ProductCard/ProductCard';
 //import ProductList from './Components/ProductList/ProductList';
 
@@ -12,6 +13,7 @@ function App() {
     <div>
       <NavBar/>
       <h2>Product catalog</h2>
+  
       
       
     
