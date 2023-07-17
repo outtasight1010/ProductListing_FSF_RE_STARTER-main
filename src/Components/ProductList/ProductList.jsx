@@ -1,5 +1,8 @@
-import react from './react';
+import React from './react';
 import ProductCard from '../ProductCard/ProductCard';
+
+import data from './data.json';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const ProductList = ({products}) => {
     return (

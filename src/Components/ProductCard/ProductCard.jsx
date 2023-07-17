@@ -1,4 +1,5 @@
 import React from "react";
+import data from './data.json';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const ProductCard = ({product}) => {
