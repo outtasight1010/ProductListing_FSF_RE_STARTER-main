@@ -1,9 +1,16 @@
-.card-img-top{
+.products {
+    display:flex;
+    flex-direction:column;
+    font-size: 10px;
+    background-color:white;
+    width: 200px;
+    color: grey;
+    padding: 2px;
+    padding-left: 10px;
+    border-radius: 20px;
+    justify-content: center;
     align-items: center;
-    
+    margin-bottom: 20px;
+
 }
 
-.card-1 {
-    
-    padding-left: 20px;
-}

@@ -4,7 +4,7 @@ import data from './data/data.json';
 import NavBar from './Components/NavBar/NavBar';
 import ProductCard from './Components/ProductCard/ProductCard';
 import ProductShop from './Components/ProductShop/ProductShop';
-//import PRODUCTS from './products';
+import products from './Components/ProductCard/products';
 import Product from './Components/ProductShop/Product';
 
 
@@ -13,11 +13,18 @@ import Product from './Components/ProductShop/Product';
 //import ProductList from './Components/ProductList/ProductList';
 
 function App()  {
-  console.log(data);
-  const products = [{data}];
-  const [allProducts, setAllProducts] = useState(data);
+  console.log(products);
+  //Mapping the products in a new array to display
+  //const arrayProductItems = products.map(product =>
+    //<li key ={product.id}>
+      //<p>{product.title}</p>
+    //</li>
+    //)
+  
+  
+  const [allProducts, setAllProducts] = useState(products);
   const handleButtonClick = () => {
-    setAllProducts({data}
+    setAllProducts({products}
    );
   };
 
@@ -38,6 +45,8 @@ function App()  {
         
       <ProductShop/>
       <ProductCard/>
+      
+      
       <div>
         
       </div>
