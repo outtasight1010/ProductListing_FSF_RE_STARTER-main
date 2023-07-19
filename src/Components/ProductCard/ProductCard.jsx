@@ -1,12 +1,12 @@
 import React from "react";
-//import data from './data.json';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 const ProductCard = ({product}) => {
     return (
         <div className="col-md-4">
             <div className='card'>
-                <img src="https://i.dummyjson.com/data/products/1/2.jpg" className="card-img-top" />
+                <img src="https://i.dummyjson.com/data/products/1/2.jpg"  className="card-img-top" alt="Apple Iphone 9" />
                 <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
                     <p className="card-brand">{product.brand}</p>
