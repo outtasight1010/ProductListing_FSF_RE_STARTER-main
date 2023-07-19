@@ -1,16 +1,29 @@
-.card {
+.container li {
     display:flex;
     flex-direction:column;
     font-size: 10px;
-    background-color:white;
-    width: 200px;
+    background-color:lightcyan;
+    width: 1000px;
     color: grey;
     padding: 2px;
-    padding-left: 10px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-weight: bold;
+    
 
+}
+
+.container {
+    margin-left: 20px
+}
+
+
+button {
+    size-adjust: 10px;
+    border:2px;
+    border-color:black;
 }
 

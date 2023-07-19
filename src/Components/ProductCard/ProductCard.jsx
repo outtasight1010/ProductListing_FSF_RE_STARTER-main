@@ -16,18 +16,15 @@ const ProductCard = ({product}) => {
           <p>{product.stock}</p>
           <p>{product.rating}</p>
           <button type="submit" >Add to cart</button>
-
-
-
-
-        </li>
+       </li>
         )
     return (
-        <div className="card">
+        <div className="container">
+            
             <div>
            
            
-            <ul>{arrayProductItems}</ul>
+            <p>{arrayProductItems}</p>
            </div>
             
                
