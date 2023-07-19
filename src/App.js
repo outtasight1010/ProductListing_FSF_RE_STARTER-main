@@ -3,6 +3,7 @@ import "./App.css";
 import data from './data/data.json';
 import NavBar from './Components/NavBar/NavBar';
 import ProductCard from './Components/ProductCard/ProductCard';
+import ProductShop from './Components/ProductShop/ProductShop';
 
 
 
@@ -32,12 +33,13 @@ function App()  {
         </hr>
       <br></br>
       
-        {products.map((product) => (
-          
-            <ProductCard/>
+        
+      <ProductShop/>
+      <ProductCard/>
+            
           
             
-          ))}
+          
       </div>
     
    );
