@@ -11,6 +11,7 @@ import ProductCard from './Components/ProductCard/ProductCard';
 
 function App()  {
   console.log(data);
+  const products = [{data}];
   const [allProducts, setAllProducts] = useState(data);
   const handleButtonClick = () => {
     setAllProducts({data}
@@ -29,7 +30,7 @@ function App()  {
         width="1400px">
         </hr>
       <br></br>
-      <ProductCard product = {allProducts}/>
+      <ProductCard products = {allProducts}/>
       <button onClick ={handleButtonClick}>Update Product</button>
       
       
