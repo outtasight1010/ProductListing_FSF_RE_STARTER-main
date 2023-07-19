@@ -23,9 +23,14 @@ const ProductCard = ({product}) => {
         </li>
         )
     return (
-        <div className="products">
+        <div className="card">
+            <div>
            
-            <div>{arrayProductItems}</div>
+           
+            <ul>{arrayProductItems}</ul>
+           </div>
+            
+               
         </div>
         
         
