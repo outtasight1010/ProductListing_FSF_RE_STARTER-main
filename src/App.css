@@ -8,3 +8,6 @@ h2{
     font-family: monospace;
 }
 
+hr {
+    margin-left: 20px;
+}

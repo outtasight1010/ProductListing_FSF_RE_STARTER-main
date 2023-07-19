@@ -24,23 +24,23 @@ function App()  {
       <NavBar/>
       <h2>Product catalog</h2>
       
-        <hr size="5"
+        <hr 
+        size="10"
         color= 'black'
         align= 'center'
         width="1400px">
         </hr>
       <br></br>
-      <ProductCard products = {allProducts}/>
-      <button onClick ={handleButtonClick}>Update Product</button>
       
-      
-      
-    </div>
-   
-   
-
+        {products.map((product) => (
+          
+            <ProductCard/>
+          
+            
+          ))}
+      </div>
     
-  );
+   );
 };
 
 export default App;
