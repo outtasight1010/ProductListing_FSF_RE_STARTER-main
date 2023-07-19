@@ -32,37 +32,7 @@ const PRODUCTS = [
     category: "smartphones",
     image: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
     },
-    {
-    id: 4,
-    title: "OPPOF19",
-    description: "OPPO F19 is officially announced on April 2021.",
-    price: 280,
-    rating: 2.3,
-    stock: 123,
-    brand: "OPPO",
-    category: "smartphones",
-    image: "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-    },
-    {
-    id: 5,
-    title: "Huawei P30",
-    description: "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-    price: 499,
-    rating: 4.09,
-    stock: 32,
-    brand: "Huawei",
-    category: "smartphones",
-    image: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-    },
-    {
-    id: 6,
-    title: "MacBook Pro",
-    description: "MacBook Pro 2021 with mini-LED display may launch between September, November",
-    price: 1749,
-    rating: 5,
-    stock: 83,
-    brand: "Apple",
-    category: "laptops",
-    image: "https://i.dummyjson.com/data/products/6/thumbnail.png",
-    }
+    
 ];
+
+export default PRODUCTS;

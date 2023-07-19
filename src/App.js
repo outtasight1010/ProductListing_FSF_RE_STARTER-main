@@ -4,6 +4,8 @@ import data from './data/data.json';
 import NavBar from './Components/NavBar/NavBar';
 import ProductCard from './Components/ProductCard/ProductCard';
 import ProductShop from './Components/ProductShop/ProductShop';
+//import PRODUCTS from './products';
+import Product from './Components/ProductShop/Product';
 
 
 
@@ -36,6 +38,9 @@ function App()  {
         
       <ProductShop/>
       <ProductCard/>
+      <div>
+        
+      </div>
             
           
             
