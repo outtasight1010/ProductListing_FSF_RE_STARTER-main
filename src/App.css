@@ -1,11 +1,11 @@
 
 
 body {
-    background-color:whitesmoke;
-    display:flex;
-    justify-content: center;
-    min-height: 100vh;
+   display:grid;
+   justify-content: center;
+   align-content: center;
     
+
 }
 h2{
     font-size: 15px;

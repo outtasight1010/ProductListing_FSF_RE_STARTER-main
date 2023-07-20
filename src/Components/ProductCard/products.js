@@ -43,6 +43,29 @@ const products = [
     category: "smartphones",
     image:  "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
     },
+    {
+    id: 5,
+    title: "Huawei P30",
+    description: "Samsung's new variant which goes beyond Galaxy to the Universe",
+    price: 499,
+    rating: 4.09,
+    stock: 32,
+    brand: "Huawei",
+    category: "smartphones",
+    image: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+    },
+    {
+    id: 6,
+    title: "MacBook Pro",
+    description: "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    price: 1749,
+    rating: 5,
+    stock: 83,
+    brand: "Apple",
+    category: "laptops",
+    image: "https://i.dummyjson.com/data/products/6/thumbnail.png",
+    },
+    
         
 ];
 
