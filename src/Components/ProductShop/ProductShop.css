@@ -1,5 +1,8 @@
-.shop h2{
-    font-size: medium;
+
+.shopTitle h2{
+    font-size: bold;
     font-style:italic;
     color: grey;
+    font-weight: 100;
+
 }

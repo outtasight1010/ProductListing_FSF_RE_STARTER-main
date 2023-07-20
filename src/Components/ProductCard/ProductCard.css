@@ -1,3 +1,94 @@
+ul {
+    list-style-type: none;
+    margin-left:37%;
+    padding:0;
+  }
+  
+  .rating{
+    margin-left:37%;
+    color: #ff4517;
+  }
+  
+  .page{
+  background-color:#dfe6e0;
+  padding:2%;
+  margin: auto;
+  }
+  
+  .fa{
+    color:#f2dd1d;
+  }
+  
+  .card-img-top:hover{
+  width:50%;
+  height:225px;
+  }
+  
+  .view{
+    background-color:#dfe6e0;
+    padding:10px;
+    margin:20px;
+  }
+
+  
+  
+  
+  .card{
+    width:40%;
+    padding:10px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+  }
+  
+  .card-footer{
+    background-color: #ff772e;
+    font-weight: 700;
+  }
+  
+  .price{
+  color:#ff4517;
+    font-weight: 600;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .container {
