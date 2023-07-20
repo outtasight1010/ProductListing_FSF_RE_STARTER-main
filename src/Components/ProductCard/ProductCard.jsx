@@ -13,6 +13,7 @@ const ProductCard = ({product}) => {
         <div className="page">
             <div className="row">
                 <div className="col-md-6">
+                    
                     <div className="card card-cascade card-ecommerce wider shadow mb-5">
                         <div className="view view-cascade overlay text-center">
                         <img class="card-img-top" src={product.image}

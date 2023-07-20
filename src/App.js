@@ -23,8 +23,6 @@ const App= () => {
 
   return (
 
-   
-  
   
   //const [allProducts, setAllProducts] = useState(products);
   //const handleButtonClick = () => {
@@ -32,8 +30,6 @@ const App= () => {
    //);
   //};
 
- 
-    
     <div>
       <NavBar/>
       <h2>Product catalog</h2>
@@ -45,8 +41,10 @@ const App= () => {
         width="1400px">
         </hr>
       <br></br>
-      <ProductShop/>
-      {arrayProductItems}
+      
+
+<ProductShop/>
+     {arrayProductItems}
     </div>
     
    );

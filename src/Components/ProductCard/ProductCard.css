@@ -37,10 +37,13 @@ ul {
   
   
   .card{
-    width:40%;
+    width:4;
     padding:10px;
-    margin-left: 2%;
+    margin-left: 50%;
     margin-bottom: 20px;
+   
+    
+  
   }
   
   .card-footer{
