@@ -12,23 +12,27 @@ import Product from './Components/ProductShop/Product';
 //import ProductCard from './Components/ProductCard/ProductCard';
 //import ProductList from './Components/ProductList/ProductList';
 
-function App()  {
+const App= () => {
   console.log(products);
+  
   //Mapping the products in a new array to display
-  //const arrayProductItems = products.map(product =>
-    //<li key ={product.id}>
-      //<p>{product.title}</p>
-    //</li>
-    //)
-  
-  
-  const [allProducts, setAllProducts] = useState(products);
-  const handleButtonClick = () => {
-    setAllProducts({products}
-   );
-  };
+  const arrayProductItems = products.map((product) => (
+    <ProductCard key = {product.id} product ={product}/>
+    
+  ));
 
   return (
+
+   
+  
+  
+  //const [allProducts, setAllProducts] = useState(products);
+  //const handleButtonClick = () => {
+    //setAllProducts({products}
+   //);
+  //};
+
+ 
     
     <div>
       <NavBar/>
@@ -41,20 +45,9 @@ function App()  {
         width="1400px">
         </hr>
       <br></br>
-      
-        
       <ProductShop/>
-      <ProductCard/>
-      
-      
-      <div>
-        
-      </div>
-            
-          
-            
-          
-      </div>
+      {arrayProductItems}
+    </div>
     
    );
 };

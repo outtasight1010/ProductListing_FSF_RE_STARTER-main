@@ -1,29 +1,21 @@
-.container li {
-    display:flex;
-    flex-direction:column;
-    font-size: 10px;
-    background-color:lightcyan;
-    width: 1000px;
-    color: grey;
-    padding: 2px;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    font-style: italic;
-    font-weight: bold;
-    
-
+.product-card {
+    border: 1px solid #ddd;
+    border-radius:5px;
+    padding:10px;
+    margin-bottom:20px;
+    background-color: azure;
 }
-
-.container {
-    margin-left: 20px
-}
+ .product-card img {
+    width:50%;
+    height:auto;
+    border: 5px;
+    margin-bottom: 10px;
+ }
 
 
 button {
     size-adjust: 10px;
-    border:2px;
+    border:3px;
     border-color:black;
 }
 

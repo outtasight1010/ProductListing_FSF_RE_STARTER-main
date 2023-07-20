@@ -7,25 +7,20 @@ import products from'./products';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const ProductCard = ({product}) => {
-    const arrayProductItems = products.map(product =>
-        <li key ={product.id}>
-          <p><img src={product.image}  className="card-img-top" alt="" /></p>
-          <p>{product.title}</p>
-          <p>{product.brand}</p>
-          <p>{product.category}</p>
-          <p>{product.stock}</p>
-          <p>{product.rating}</p>
-          <button type="submit" >Add to cart</button>
-       </li>
-        )
+    
+ 
     return (
-        <div className="container">
-            
-            <div>
-           
-           
-            <p>{arrayProductItems}</p>
-           </div>
+        <div className="product-card">
+            <img src ={product.image} alt =""/>
+            <h3>{product.title}</h3>
+            <p>{product.description}</p>
+            <p>${product.price}</p>
+            <p>{product.rating}</p>
+            <p>{product.stock}</p>
+            <p>{product.brand}</p>
+            <p>{product.category}</p>
+            <button>Add to cart</button>
+          
             
                
         </div>
