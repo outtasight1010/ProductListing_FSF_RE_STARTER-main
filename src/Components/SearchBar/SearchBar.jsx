@@ -21,7 +21,7 @@ const SearchBar = () => {
       
       if (allProducts.length > 0) {
           products.filter((product) => {
-          return product.id.match(allProducts);
+          return product.match(allProducts);
       });
       }
     return (
