@@ -7,17 +7,21 @@ import React, {useState} from 'react'
 
 
 const SearchBar = () => {
-    const [searchInput, setSearchInput] = useState("");
-    
 
-    const handleChange = (e) => {
+    
+      const [allProducts, setAllProducts] = useState(products);
+      const handleButtonClick = (e) => {
+
         e.preventDefault();
-        setSearchInput({products});
-      };
+        setAllProducts({products}
+    );
+    };
+
+   
       
-      if (searchInput.length > 0) {
+      if (allProducts.length > 0) {
           products.filter((product) => {
-          return product.title.match(searchInput);
+          return product.id.match(allProducts);
       });
       }
     return (
@@ -26,8 +30,8 @@ const SearchBar = () => {
         <input
    type="text"
    placeholder="Search here"
-   onChange={handleChange}
-   value={searchInput} />
+   onChange={handleButtonClick}
+   value={allProducts} />
         
 
     );
