@@ -1,20 +1,32 @@
-import React from 'react';
+
 import products from '../ProductCard/products';
+import React, {useState} from 'react'
+
+
+
+
 
 const SearchBar = () => {
+    const [searchInput, setSearchInput] = useState("");
+    
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
+      };
+      
+      if (searchInput.length > 0) {
+          products.filter((product) => {
+          return product.title.match(searchInput);
+      });
+      }
     return (
+       
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown button
-            </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-
-        </div>
+        <input
+   type="text"
+   placeholder="Search here"
+   onChange={handleChange}
+   value={searchInput} />
         
 
     );
