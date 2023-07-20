@@ -24,10 +24,7 @@ const ProductCard = ({product}) => {
                     </div>
                     <div className="rating">
                         <i className="fa fa-star" >{product.rating}</i>
-                        <i className="fa fa-star" ></i>
-                        <i className="fa fa-star" ></i>
-                        <i className="fa fa-star" ></i>
-                        <i className="fa fa-star" ></i>
+                        
                     </div>
                     <div className="product description">
                         <p>{product.description}</p>

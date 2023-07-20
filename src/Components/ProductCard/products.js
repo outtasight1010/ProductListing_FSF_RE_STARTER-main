@@ -32,7 +32,18 @@ const products = [
     category: "smartphones",
     image: "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
     },
-    
+    {
+    id: 4,
+    title: "OPPOF19",
+    description: "OPPO F19 is officially announced on April 2021.",
+    price: 280,
+    rating: 2.3,
+    stock: 123,
+    brand: "OPPO",
+    category: "smartphones",
+    image:  "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+    },
+        
 ];
 
 export default products;
