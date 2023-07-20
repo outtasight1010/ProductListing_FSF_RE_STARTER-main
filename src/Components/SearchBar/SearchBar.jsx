@@ -9,9 +9,10 @@ import React, {useState} from 'react'
 const SearchBar = () => {
     const [searchInput, setSearchInput] = useState("");
     
+
     const handleChange = (e) => {
         e.preventDefault();
-        setSearchInput(e.target.value);
+        setSearchInput({products});
       };
       
       if (searchInput.length > 0) {

@@ -45,6 +45,9 @@ ul {
     
   
   }
+  .card-body{
+    display:inline-block;
+  }
   
   .card-footer{
     background-color: #ff772e;
