@@ -6,6 +6,7 @@ import ProductCard from './Components/ProductCard/ProductCard';
 import ProductShop from './Components/ProductShop/ProductShop';
 import products from './Components/ProductCard/products';
 import Product from './Components/ProductShop/Product';
+import SearchBar from './Components/SearchBar/SearchBar';
 
 
 
@@ -16,6 +17,7 @@ const App= () => {
   console.log(products);
   
   //Mapping the products in a new array to display
+
   const arrayProductItems = products.map((product) => (
     <ProductCard key = {product.id} product ={product}/>
     
@@ -33,6 +35,7 @@ const App= () => {
     <div>
       <NavBar/>
       <h2>Product catalog</h2>
+      <SearchBar/>
       
         <hr 
         size="10"
@@ -44,8 +47,12 @@ const App= () => {
       
 
 <ProductShop/>
-     {arrayProductItems}
-    </div>
+
+  <div>{arrayProductItems}</div>
+
+</div>
+     
+   
     
    );
 };
