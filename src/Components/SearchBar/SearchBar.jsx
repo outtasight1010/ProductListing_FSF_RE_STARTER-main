@@ -6,43 +6,36 @@ import React, {useState} from 'react'
 
 
 
-const SearchBar = () => {
+const SearchBar = ({products, onSearch}) => {
 
     
-      const [allProducts, setAllProducts] = useState(products);
-      const handleButtonClick = (e) => {
+      const [searchTerm, setSearchTerm] = useState("");
+      const handleSearch = (e) => {
 
-        e.preventDefault();
-        setAllProducts({products}
-    );
+      setSearchTerm(e.target.value);
+      onSearch(e.target.value);
+    
     };
 
    
       
-      if (allProducts.length > 0) {
-          products.filter((product) => {
-          return product.match(allProducts);
-      });
-      }
+      
     return (
-       
-
-        <input
-   type="text"
-   placeholder="Search here"
-   onChange={handleButtonClick}
-   value={allProducts} />
-        
+        <div className='search'>
+            <input
+            type = "text"
+            placeholder='Search products...'
+            value = {searchTerm}
+            onChange={handleSearch}
+            />
+        </div>
 
     );
-
 };
+       
 
-
-
-
-
-
+      
+   
 
 export default SearchBar;
 

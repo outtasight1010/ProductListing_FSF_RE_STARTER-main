@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const ProductCard = ({product}) => {
     
+    
  
     return (
         <div className="page">

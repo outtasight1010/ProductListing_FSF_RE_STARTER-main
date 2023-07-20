@@ -10,11 +10,16 @@ import SearchBar from './Components/SearchBar/SearchBar';
 
 
 
-//import ProductCard from './Components/ProductCard/ProductCard';
-//import ProductList from './Components/ProductList/ProductList';
-
 const App= () => {
   console.log(products);
+  const [filterdProducts, setFilteredProducts]=useState([]);
+  const handleSearch = (searchTerm) => {
+    const filtered = products.filter ((product) => {
+      const newProduct = product.title.toLowerCase();
+      return newProduct.includes(searchTerm.toLowerCase());
+    });
+    setFilteredProducts(filtered);
+  }
   
   //Mapping the products in a new array to display
 
@@ -32,23 +37,38 @@ const App= () => {
    //);
   //};
 
-    <div>
+    <div className='App'>
       <NavBar/>
-      <h2>Product catalog</h2>
-      <SearchBar/>
-      
-        <hr 
+      <hr 
         size="10"
         color= 'black'
         align= 'center'
         width="1400px">
         </hr>
       <br></br>
+      <h2>Michelle's Shop</h2>
+      
       
 
-<ProductShop/>
+     <div></div>
+      <SearchBar products = {products} onSearch={handleSearch}/>
+      <div className='row'>
+        {filterdProducts.length >0
+        ? filterdProducts.map((product) => (
+          <div className='col=md-4' key = {product.id}>
+            <ProductCard product = {product}/>
+            </div>
+        ))
+        :<p></p>}
+        {arrayProductItems
+        }
+        
 
-  <div>{arrayProductItems}</div>
+      </div>
+      
+      
+  
+
 
 </div>
      

@@ -5,7 +5,7 @@ import './NavBar.css';
 const NavBar = () => {
     return (
         <header className='text-left'>
-            <h1>Shop4Products!</h1>
+            <h1>Time2Shop!</h1>
             
         </header>
     )
