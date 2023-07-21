@@ -48,10 +48,33 @@ ul {
   .card-body{
     display:inline-block;
   }
+
+  .card .card-description {
+    font-size: small;
+    color:crimson;
+    font-family: cursive;
+  }
+
+  .card .card-brand {
+    font-weight: bold;
+
+  }
+
+  .card .card-category {
+    font-family: monospace;
+    font-weight: bolder;
+    color: darkred;
+  }
   
   .card-footer{
     background-color: #ff772e;
     font-weight: 700;
+  }
+
+  .card-footer button {
+    color: lightblue;
+    font-weight: bold;
+    
   }
   
   .price{

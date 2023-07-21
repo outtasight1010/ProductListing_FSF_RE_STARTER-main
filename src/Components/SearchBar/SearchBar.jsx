@@ -23,7 +23,7 @@ const SearchBar = ({ products, onFilter }) => {
       <input
         type="text"
         className="form-control"
-        placeholder="Search..."
+        placeholder="Search for products..."
         onChange={handleSearch}
       />
       <div className="input-group-append">
