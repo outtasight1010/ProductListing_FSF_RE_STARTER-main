@@ -6,29 +6,23 @@ import React, {useState} from 'react'
 
 
 
-const SearchBar = ({products, onSearch}) => {
+function SearchBar({searchQuery, setSearchQuery})  {
 
-    
-      const [searchTerm, setSearchTerm] = useState("");
-      const handleSearch = (e) => {
-
-      setSearchTerm(e.target.value);
-      onSearch(e.target.value);
-    
+    const handleInputChange = (event) => {
+        setSearchQuery(event.target.value);
     };
 
    
       
       
     return (
-        <div className='search'>
             <input
             type = "text"
             placeholder='Search products...'
-            value = {searchTerm}
-            onChange={handleSearch}
+            value = {searchQuery}
+            onChange={handleInputChange}
             />
-        </div>
+        
 
     );
 };

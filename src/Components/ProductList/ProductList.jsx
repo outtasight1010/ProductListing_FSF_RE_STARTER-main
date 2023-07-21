@@ -1,23 +1,33 @@
-import React from 'react';
-import ProductCard from '../ProductCard/ProductCard';
+import React, { useState } from 'react';
+import ProductCard from './ProductCard';
 
+const ProductList = ({ products }) => {
+  const [searchQuery, setSearchQuery] = useState('');
 
-import 'bootstrap/dist/css/bootstrap.css';
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value);
+  };
 
-const ProductList = ({products}) => {
+  // Filter the products based on the search query
+  const filteredProducts = products.filter((product) => {
+    return product.title.toLowerCase().includes(searchQuery.toLowerCase());
+  });
 
-    return (
-        <div className='container'>
-            <div className = 'row'>
-                {products.map((product) => (
-                    <ProductCard key = {product.id} product ={product}/>
-
-                ))}
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Search..."
+        value={searchQuery}
+        onChange={handleSearch}
+      />
+      <div>
+        {filteredProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+    </div>
+  );
 };
-          
-
 
 export default ProductList;

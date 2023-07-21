@@ -10,23 +10,32 @@ import SearchBar from './Components/SearchBar/SearchBar';
 
 
 
-const App= () => {
+function App() {
   console.log(products);
-  const [filterdProducts, setFilteredProducts]=useState([]);
-  const handleSearch = (searchTerm) => {
-    const filtered = products.filter ((product) => {
-      const newProduct = product.title.toLowerCase();
-      return newProduct.includes(searchTerm.toLowerCase());
-    });
+  const [searchQuery, setSearchQuery]=useState("");
+  const [filteredProducts, setFilteredProducts]=useState([]);
+
+  const filterProducts = () => {
+    const filtered = products.filter((product) => {
+      return (
+        product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        product.category.toLowerCase().includes(searchQuery).toLowerCase())
+
+       } );
+    };
     setFilteredProducts(filtered);
-  }
+
+
+  
   
   //Mapping the products in a new array to display
 
-  const arrayProductItems = products.map((product) => (
-    <ProductCard key = {product.id} product ={product}/>
+  //const arrayProductItems = products.map((product) => (
+    //<ProductCard key = {product.id} product ={product}/>
     
-  ));
+  //));
 
   return (
 
@@ -50,31 +59,25 @@ const App= () => {
       
       
 
-     <div></div>
-      <SearchBar products = {products} onSearch={handleSearch}/>
-      <div className='row'>
-        {filterdProducts.length >0
-        ? filterdProducts.map((product) => (
-          <div className='col=md-4' key = {product.id}>
-            <ProductCard product = {product}/>
-            </div>
+     
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+      {searchQuery === "" ? (
+        products.map((product) => (
+          <ProductCard key = {product.id} product={product}/>
         ))
-        :<p></p>}
         
-        {arrayProductItems}
-        
+      ) : (
+        filteredProducts.map((product) => (
+          <ProductCard key = {product.id} product={product}/>
+
+        ))
+      )}
 
       </div>
-      
-      
   
-
-
-</div>
-     
-   
-    
-   );
-};
+  )  
+  };
+  
+  
 
 export default App;
