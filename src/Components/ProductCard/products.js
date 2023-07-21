@@ -65,6 +65,28 @@ const products = [
     category: "laptops",
     image: "https://i.dummyjson.com/data/products/6/thumbnail.png",
     },
+    {
+    id: 7,
+    title: "Samsung Galaxy Book",
+    description: "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+    price: 1499,
+    rating: 4.25,
+    stock: 50,
+    brand: "Samsung",
+    category: "laptops",
+    image:"https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+    },
+    {
+    id: 8,
+    title: "Microsoft Surface Laptop 4",
+    description: "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+    price: 1499,
+    rating: 3.43,
+    stock: 68,
+    brand: "Microsoft Surface",
+    category: "laptops",
+    image:"https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+    },
     
         
 ];

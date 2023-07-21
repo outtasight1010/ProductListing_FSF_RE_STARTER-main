@@ -1,6 +1,7 @@
 import React from "react";
 import './ProductCard.css';
 import products from'./products';
+import StarRating from "../StarRating/StarRating";
 
 
 
@@ -31,13 +32,7 @@ const ProductCard = ({product}) => {
                             <p className="card-stock">{product.stock}</p>
                             <p className="card-category">{product.category}</p>
 
-                            <ul className="row-rating">
-                                <li><i className="fa fa-star">{product.rating}</i></li>
-                                <li><i className="fa fa-star"></i></li>
-                                <li><i className="fa fa-star"></i></li>
-                                <li><i className="fa fa-star"></i></li>
-                                <li><i className="fa fa-star"></i></li>
-                            </ul>
+                            <StarRating rating = {product.rating}/>
                             <div className="card-footer">
                                 <button type = "submit" className="btn btn-primary">
                                     Add to Cart
