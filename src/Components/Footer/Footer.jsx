@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +10,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-6">
             <h3>Contact Us</h3>
-            <p>Email: contact@example.com</p>
+            <p>Email: contact@devCodeCampRULZ</p>
             <p>Phone: (123) 456-7890</p>
           </div>
           <div className="col-md-6">
@@ -18,9 +20,17 @@ const Footer = () => {
             {/* Add other social media links */}
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <p>
+              Made with <FontAwesomeIcon icon={faHeart} style={{ color: 'red' }} /> by Michelle
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
   );
 };
 
 export default Footer;
+

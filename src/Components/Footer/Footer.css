@@ -1,6 +1,6 @@
 /* Footer.css */
 .footer {
-    background-color: #333;
+    background-color:grey;
     color: #fff;
     padding: 20px 0;
   }
@@ -11,6 +11,8 @@
   
   .footer p {
     margin: 5px 0;
+    font-family:cursive;
+    font-weight: lighter;
   }
   
   .footer a {
