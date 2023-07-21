@@ -8,6 +8,7 @@ import products from './Components/ProductCard/products';
 import Product from './Components/ProductShop/Product';
 import SearchBar from './Components/SearchBar/SearchBar';
 import ProductList from './Components/ProductList/ProductList';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -49,9 +50,10 @@ const App = () => {
 
      
       <ProductList products = {products}/>
+      <Footer/>
 
       </div>
-  
+      
   )  
   };
   
