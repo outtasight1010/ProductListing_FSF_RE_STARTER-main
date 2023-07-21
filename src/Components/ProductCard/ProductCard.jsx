@@ -14,7 +14,7 @@ const ProductCard = ({product}) => {
     return (
         <div className="page">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-sm-8">
                     
                     <div className="card card-cascade card-ecommerce wider shadow mb-5">
                         <div className="view view-cascade overlay text-center">
