@@ -60,8 +60,8 @@ const App= () => {
             </div>
         ))
         :<p></p>}
-        {arrayProductItems
-        }
+        
+        {arrayProductItems}
         
 
       </div>
