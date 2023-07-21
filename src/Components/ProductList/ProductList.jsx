@@ -1,26 +1,18 @@
 import React, { useState } from 'react';
-import ProductCard from './ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
+import SearchBar from '../SearchBar/SearchBar';
+import products from '../ProductCard/products';
 
 const ProductList = ({ products }) => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredProducts, setFilteredProducts] = useState(products);
 
-  const handleSearch = (event) => {
-    setSearchQuery(event.target.value);
+  const handleFilter = (filteredProducts) => {
+    setFilteredProducts(filteredProducts);
   };
-
-  // Filter the products based on the search query
-  const filteredProducts = products.filter((product) => {
-    return product.title.toLowerCase().includes(searchQuery.toLowerCase());
-  });
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchQuery}
-        onChange={handleSearch}
-      />
+      <SearchBar products={products} onFilter={handleFilter} />
       <div>
         {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />

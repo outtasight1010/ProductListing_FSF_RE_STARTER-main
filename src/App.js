@@ -7,25 +7,13 @@ import ProductShop from './Components/ProductShop/ProductShop';
 import products from './Components/ProductCard/products';
 import Product from './Components/ProductShop/Product';
 import SearchBar from './Components/SearchBar/SearchBar';
+import ProductList from './Components/ProductList/ProductList';
 
 
 
-function App() {
+const App = () => {
   console.log(products);
-  const [searchQuery, setSearchQuery]=useState("");
-  const [filteredProducts, setFilteredProducts]=useState([]);
-
-  const filterProducts = () => {
-    const filtered = products.filter((product) => {
-      return (
-        product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.category.toLowerCase().includes(searchQuery).toLowerCase())
-
-       } );
-    };
-    setFilteredProducts(filtered);
+  
 
 
   
@@ -46,7 +34,7 @@ function App() {
    //);
   //};
 
-    <div className='App'>
+    <div>
       <NavBar/>
       <hr 
         size="10"
@@ -60,18 +48,7 @@ function App() {
       
 
      
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
-      {searchQuery === "" ? (
-        products.map((product) => (
-          <ProductCard key = {product.id} product={product}/>
-        ))
-        
-      ) : (
-        filteredProducts.map((product) => (
-          <ProductCard key = {product.id} product={product}/>
-
-        ))
-      )}
+      <ProductList products = {products}/>
 
       </div>
   
