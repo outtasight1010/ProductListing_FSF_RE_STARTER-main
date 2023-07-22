@@ -33,14 +33,17 @@ ul {
     margin:20px;
   }
 
-  
+  .col-sm-4 {
+    margin-left: -50px;
+  }
   
   
   .card{
     width:4;
     padding:10px;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-bottom: 20px;
+    
    
     
   
@@ -65,10 +68,14 @@ ul {
     font-weight: bolder;
     color: darkred;
   }
+  .card-stock {
+    font-size: smaller;
+    font-style: italic;
+  }
   
   .card-footer{
     background-color: #ff772e;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .card-footer button {

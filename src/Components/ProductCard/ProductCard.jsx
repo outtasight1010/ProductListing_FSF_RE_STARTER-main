@@ -2,6 +2,8 @@ import React from "react";
 import './ProductCard.css';
 import products from'./products';
 import StarRating from "../StarRating/StarRating";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -12,9 +14,8 @@ const ProductCard = ({product}) => {
     
  
     return (
-        <div className="page">
-            <div className="row">
-                <div className="col-sm-8">
+        
+                <div className="col-sm-4">
                     
                     <div className="card card-cascade card-ecommerce wider shadow mb-5">
                         <div className="view view-cascade overlay text-center">
@@ -29,7 +30,8 @@ const ProductCard = ({product}) => {
                             <p className="card-description">{product.description}</p>
                             <p className="card-price">${product.price}</p>
                             <p className="card-brand">{product.brand}</p>
-                            <p className="card-stock">{product.stock}</p>
+                            <p className="card-stock">{product.stock} <FontAwesomeIcon icon={faHeart} style={{ color: 'red' }}/> in stock</p>
+                            
                             <p className="card-category">{product.category}</p>
 
                             <StarRating rating = {product.rating}/>
@@ -42,9 +44,7 @@ const ProductCard = ({product}) => {
                         </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
+               
         
 
 

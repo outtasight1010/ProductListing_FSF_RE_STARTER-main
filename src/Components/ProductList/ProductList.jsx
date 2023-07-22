@@ -14,9 +14,13 @@ const ProductList = ({ products }) => {
     <div>
       <SearchBar products={products} onFilter={handleFilter} />
       <div>
-        {filteredProducts.map((product) => (
-          <ProductCard key={product.id} product={product} />
+        <div className='page'>
+          <div className='row'>
+            {filteredProducts.map((product) => (
+             <ProductCard key={product.id} product={product} />
         ))}
+          </div>
+        </div>
       </div>
     </div>
   );
