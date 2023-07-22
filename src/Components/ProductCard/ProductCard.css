@@ -60,6 +60,7 @@ ul {
 
   .card .card-brand {
     font-weight: bold;
+    font-style: italic;
 
   }
 
@@ -67,6 +68,7 @@ ul {
     font-family: monospace;
     font-weight: bolder;
     color: darkred;
+    font-style: italic;
   }
   .card-stock {
     font-size: smaller;
@@ -130,77 +132,5 @@ ul {
 
 
 
-.container {
-    
-    box-sizing:border-box;
-    
-    position:relative;
-    width:1000px;
-    display:grid;
-    grid-template-columns:repeat(autofit,minmax(100px,1fr));
-    grid-gap:20px;
-    padding:10px
-}
 
-.container .card {
-    width:20%;
-    background-color: azure;
-    color:black;
-    display: grid;
-    align-items: row;
-    
-
-    
-}
-
-.container .card .imgBx {
-    position:relative;
-    width:100%;
-    height:200px;
-    overflow:hidden;
-}
-
-.container .card .imgBx img {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
-    transform-origin: right;
-    
-}
-
-.container .card:hover .imgBx img {
-    transform:scale(1.5);
-
-}
-
-.container .content {
-    padding:10px;
-}
-
-.container .content .productName h3{
-font-size: 18px;
-font-weight:500;
-color:#333;
-margin:5px 0;
-
-}
-.container .content .price-rating h2 {
-    font-size:20px;
-    color:darkred;
-    font-weight:500;
-
-}
-.container .content .price-rating .fa  {
-    color:#ffd513;
-    cursor:pointer;
-
-
-}
-.container .content .price-rating .fa.grey {
-color:black;
-}
 

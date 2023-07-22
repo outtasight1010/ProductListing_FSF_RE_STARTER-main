@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-md-6">
             <h3>Contact Us</h3>
             <p>Email: contact@devCodeCampRULZ</p>
-            <p>Phone: (123) 456-7890</p>
+            <p>Phone: (555) 867-5309</p>
           </div>
           <div className="col-md-6">
             <h3>Follow Us</h3>

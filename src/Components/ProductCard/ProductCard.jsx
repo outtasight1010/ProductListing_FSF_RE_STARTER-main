@@ -30,7 +30,7 @@ const ProductCard = ({product}) => {
                             <p className="card-description">{product.description}</p>
                             <p className="card-price">${product.price}</p>
                             <p className="card-brand">{product.brand}</p>
-                            <p className="card-stock">{product.stock} <FontAwesomeIcon icon={faHeart} style={{ color: 'red' }}/> in stock</p>
+                            <p className="card-stock">{product.stock} <FontAwesomeIcon icon={faHeart} style={{ color: 'blue' }}/> in stock</p>
                             
                             <p className="card-category">{product.category}</p>
 
