@@ -9,6 +9,8 @@ import Product from './Components/ProductShop/Product';
 import SearchBar from './Components/SearchBar/SearchBar';
 import ProductList from './Components/ProductList/ProductList';
 import Footer from './Components/Footer/Footer';
+import DropdownFilter from './Components/DropdownFilter/DropdownFilter';
+
 
 
 
@@ -37,18 +39,10 @@ const App = () => {
 
     <div>
       <NavBar/>
-      <hr 
-        size="10"
-        color= 'black'
-        align= 'center'
-        width="1400px">
-        </hr>
+      
       <br></br>
       <h2>Michelle's Shop</h2>
-      
-      
-
-     
+      <DropdownFilter/>
       <ProductList products = {products}/>
       <Footer/>
 
