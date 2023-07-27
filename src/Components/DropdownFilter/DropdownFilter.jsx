@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 //import ProductCard from './ProductCard';
 import products from '../ProductCard/products';
+import './DropdownFilter.css'
 
 const DropdownFilter = () => {
   const [selectedFilter, setSelectedFilter] = useState('Category'); 
-  const filterOptions = ['All','Laptops', 'Smartphones', 'Electronics', 'Fragrances','Skincare','Groceries','Home Decoration']; 
+  const filterOptions = ['All','laptops', 'smartphones','fragrances','skincare','groceries','home decoration']; 
 
   
   const filteredProducts = selectedFilter === 'Category'
@@ -17,6 +18,7 @@ const DropdownFilter = () => {
 
   return (
     <div>
+        <h5>Choose Product Category</h5>
       {/* Dropdown menu for filtering */}
       <select value={selectedFilter} onChange={handleFilterChange}>
         {filterOptions.map((option) => (
@@ -27,7 +29,8 @@ const DropdownFilter = () => {
       </select>
 
       {/* Table to display the filtered products */}
-      <table>
+      
+      <table className='product-table'>
         <tbody>
           {filteredProducts.map((product) => (
             <tr key={product.id}>

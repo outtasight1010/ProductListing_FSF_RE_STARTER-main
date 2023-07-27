@@ -19,7 +19,7 @@ const ProductCard = ({product}) => {
                     
                     <div className="card card-cascade card-ecommerce wider shadow mb-5">
                         <div className="view view-cascade overlay text-center">
-                        <img class="card-img-top" src={product.image}
+                        <img className="card-img-top" src={product.image}
             alt=""></img>
                          <a>
                             <div className="mask rgba-white-slight"></div>

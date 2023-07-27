@@ -1,0 +1,42 @@
+/* Assuming you have a separate CSS file for your component */
+
+.product-table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 5px;
+    text-align: left;
+    border: 2px solid darkred;
+    
+  }
+  
+  .product-table th {
+    background-color:azure;
+    font-weight: bold;
+  }
+  
+  .product-table td {
+    font-size: 11px;
+    font-style: oblique;
+    
+  }
+  
+  .product-table tr:nth-child(even) {
+    background-color: lightsteelblue;
+  }
+  
+  .product-table tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+  h5 {
+    font-family:monospace;
+    font-style: oblique;
+  }
