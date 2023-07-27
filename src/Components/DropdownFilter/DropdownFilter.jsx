@@ -4,11 +4,11 @@ import products from '../ProductCard/products';
 import './DropdownFilter.css'
 
 const DropdownFilter = () => {
-  const [selectedFilter, setSelectedFilter] = useState('Category'); 
+  const [selectedFilter, setSelectedFilter] = useState('All'); 
   const filterOptions = ['All','laptops', 'smartphones','fragrances','skincare','groceries','home decoration']; 
 
   
-  const filteredProducts = selectedFilter === 'Category'
+  const filteredProducts = selectedFilter === 'All'
     ? products
     : products.filter((product) => product.category === selectedFilter);
 
