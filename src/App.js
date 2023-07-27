@@ -10,6 +10,7 @@ import SearchBar from './Components/SearchBar/SearchBar';
 import ProductList from './Components/ProductList/ProductList';
 import Footer from './Components/Footer/Footer';
 import DropdownFilter from './Components/DropdownFilter/DropdownFilter';
+import AlphabeticalSort from './Components/AlphabeticalSort/AlphabeticalSort';
 
 
 
@@ -44,6 +45,7 @@ const App = () => {
       <h2>Michelle's Shop</h2>
       <DropdownFilter/>
       <ProductList products = {products}/>
+      <AlphabeticalSort/>
       <Footer/>
 
       </div>
