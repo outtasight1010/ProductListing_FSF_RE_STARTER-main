@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AlphabeticalSort from '../AlphabeticalSort/AlphabeticalSort'; // Import your SortDropdown component
 import products from '../ProductCard/products'; // Import your array of products
 
+
 const ProductPage = () => {
   const [sortedProducts, setSortedProducts] = useState(products);
   const [sortOption, setSortOption] = useState('name-asc');
@@ -26,10 +27,7 @@ const ProductPage = () => {
       <div className="product-list">
         {sortedProducts.map((product) => (
           <div key={product.id} className="product-card">
-            {/* Render your product information here */}
-            <h3>{product.title}</h3>
-            <p>{product.description}</p>
-            {/* ... other product details */}
+           
           </div>
         ))}
       </div>
