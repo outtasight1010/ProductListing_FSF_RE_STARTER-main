@@ -1,7 +1,7 @@
 import React from 'react';
 import products from '../ProductCard/products';
 
-const AlphabeticalSort = ({ onSortChange }) => {
+const AlphabeticalSort = ({ products, onSortChange }) => {
   const handleSortChange = (event) => {
     onSortChange(event.target.value);
   };
@@ -17,4 +17,5 @@ const AlphabeticalSort = ({ onSortChange }) => {
 };
 
 export default AlphabeticalSort;
+
 
